@@ -17,7 +17,7 @@ class App extends Component {
       
       this._closeSubMenu();
       setTimeout(()=>{
-        menuButton.setAttribute("src","/images/icon-menu.svg");
+        menuButton.setAttribute("src",require("./images/icon-menu.svg"));
       },200)
     }
     else{
@@ -25,7 +25,7 @@ class App extends Component {
       menu.style.transform = "translate(0%)";
       menuButton.style.transform = "rotateZ(360deg)";
       setTimeout(()=>{
-        menuButton.setAttribute("src","/images/icon-close-menu.svg");
+        menuButton.setAttribute("src",require("./images/icon-close-menu.svg"));
       },200)
     }
   }
@@ -75,37 +75,37 @@ class App extends Component {
     return (
       <div className="App">
         <div className="header" >
-          <img src="/images/logo.svg" alt="SNAP" />
+          <img src={require("./images/logo.svg")} alt="SNAP" />
           <div id='menu' className="menu">
             <div className='under-menu-div'>
               <div className='menuButtonContainer'>
               <div id='features' >
                 <div className='menu-head' onClick={this._toggleSubMenu}>
                   <p className='subMenuHeader'>Features</p>
-                  <img src="/images/icon-arrow-down.svg" alt="Open" />
+                  <img src={require("./images/icon-arrow-down.svg")} alt="Open" />
                 </div>
                 <div className='sub-menu'>
                   <div>
                     <a href="/">
-                      <img src="/images/icon-todo.svg" alt="Todo" />
+                      <img src={require("./images/icon-todo.svg")} alt="Todo" />
                       <p>Todo List</p>
                     </a>
                   </div>
                   <div>
                     <a href='/'>
-                      <img src="/images/icon-calendar.svg" alt="Calendar" />
+                      <img src={require("./images/icon-calendar.svg")} alt="Calendar" />
                       <p>Calendar</p>
                     </a>
                   </div>
                   <div>
                     <a href='/'>
-                      <img src="/images/icon-reminders.svg" alt="Reminders" />
+                      <img src={require("./images/icon-reminders.svg")} alt="Reminders" />
                       <p>Reminders</p>
                     </a>
                   </div>
                   <div>
                     <a href='/'>
-                      <img src="/images/icon-planning.svg" alt="Planning" />
+                      <img src={require("./images/icon-planning.svg")} alt="Planning" />
                       <p>Planning</p>
                     </a>
                   </div>
@@ -114,7 +114,7 @@ class App extends Component {
               <div id='Company'>
                 <div className='menu-head' onClick={this._toggleSubMenu}>
                   <p className='subMenuHeader'>Company</p>
-                  <img src="/images/icon-arrow-down.svg" alt="Open" />
+                  <img src={require("./images/icon-arrow-down.svg")} alt="Open" />
                 </div> 
                 <div className='sub-menu'>
                   <div>
@@ -138,11 +138,11 @@ class App extends Component {
             </div> 
           </div>
           <div className="menu-button" onClick={this._toggleMenu}>
-            <img id='menuButton' src="/images/icon-menu.svg" alt="Open menu" />
+            <img id='menuButton' src={require("./images/icon-menu.svg")} alt="Open menu" />
           </div>
         </div>
         <div className="body">
-          <img src="/images/image-hero-mobile.png" alt="hero" />
+          <img src={require("./images/image-hero-mobile.png")} alt="hero" />
           <div>
             <div>
               <h1>Make remote work</h1>
@@ -153,10 +153,10 @@ class App extends Component {
               <button>Learn more</button>
             </div> 
             <div className="footer">
-              <img src="/images/client-databiz.svg" alt="Databiz" />
-              <img src="/images/client-audiophile.svg" alt="Audiophile" />
-              <img src="/images/client-meet.svg" alt="Meet" />
-              <img src="/images/client-maker.svg" alt="Maker" />
+              <img src={require("./images/client-databiz.svg")} alt="Databiz" />
+              <img src={require("./images/client-audiophile.svg")} alt="Audiophile" />
+              <img src={require("./images/client-meet.svg")} alt="Meet" />
+              <img src={require("./images/client-maker.svg")} alt="Maker" />
             </div>
           </div>
         </div>

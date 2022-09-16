@@ -179,7 +179,7 @@ h1{
 .lonelyLink{
   margin-bottom: 1.8rem;
 }
-.lonelyLink:nth-child(1){
+.lonelyLink:nth-child(0){
   margin-top: 1.8rem;
 }
 .menuButtonContainer{
@@ -308,7 +308,7 @@ h1{
     max-width: 450px;
   }
   .body > img{
-    content: url("/images/image-hero-desktop.png");
+    content: url("./images/image-hero-desktop.png");
     max-height: 640px;
     max-width: 500px;
   }
