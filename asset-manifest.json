@@ -1,6 +1,20 @@
 {
-  "main.css": "static/css/main.28c25357.css",
-  "main.css.map": "static/css/main.28c25357.css.map",
-  "main.js": "static/js/main.ab7909ec.js",
-  "main.js.map": "static/js/main.ab7909ec.js.map"
+  "main.css": "static/css/main.00aa471d.css",
+  "main.css.map": "static/css/main.00aa471d.css.map",
+  "main.js": "static/js/main.76791b25.js",
+  "main.js.map": "static/js/main.76791b25.js.map",
+  "static/media/client-audiophile.svg": "static/media/client-audiophile.276b2fcb.svg",
+  "static/media/client-databiz.svg": "static/media/client-databiz.5a18f06c.svg",
+  "static/media/client-maker.svg": "static/media/client-maker.52f26525.svg",
+  "static/media/client-meet.svg": "static/media/client-meet.58863135.svg",
+  "static/media/icon-arrow-down.svg": "static/media/icon-arrow-down.8cad2ebb.svg",
+  "static/media/icon-calendar.svg": "static/media/icon-calendar.60bb4d98.svg",
+  "static/media/icon-close-menu.svg": "static/media/icon-close-menu.84f79f09.svg",
+  "static/media/icon-menu.svg": "static/media/icon-menu.bbcce338.svg",
+  "static/media/icon-planning.svg": "static/media/icon-planning.c5124739.svg",
+  "static/media/icon-reminders.svg": "static/media/icon-reminders.aca0310c.svg",
+  "static/media/icon-todo.svg": "static/media/icon-todo.630a69a8.svg",
+  "static/media/image-hero-desktop.png": "static/media/image-hero-desktop.12751c5e.png",
+  "static/media/image-hero-mobile.png": "static/media/image-hero-mobile.dcd083eb.png",
+  "static/media/logo.svg": "static/media/logo.531ae814.svg"
 }
