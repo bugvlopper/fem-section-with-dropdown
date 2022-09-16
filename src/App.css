@@ -1,0 +1,318 @@
+:root{
+  --almost-black: hsl(0, 0%, 8%);
+  --almost-white: hsl(0, 0%, 98%);
+  --almost-gray: hsl(0, 0%, 41%);
+}
+.App{
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100vh;
+}
+a{
+  text-decoration: none;
+  color: var(--almost-gray);
+  transition: color 200ms ease-out;
+}
+a:hover,.subMenuHeader:hover, .connect-div button:hover{
+  color: var(--almost-black);
+}
+.subMenuHeader{
+  transition: color 200ms ease-out;
+}
+.subMenuHeader:hover ~ img{
+  transition: filter 200ms;
+  filter: invert(5%) sepia(0) saturate(0) hue-rotate(0) brightness(0) contrast(101%);
+}
+button:hover{
+  cursor: pointer;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  position: relative;
+  max-height: 27px;
+}
+.menu{
+  position: absolute;
+  background: linear-gradient(90deg,hsl(0, 0%, 41%,0.2) 40%, var(--almost-white)40%) ;
+  height: 100vh;
+  width: 100vw;
+  margin-right: 0;
+  margin-left: 0;
+  right: -1rem;
+  top: -1.2rem;
+  overflow: hidden;
+  transform: translateX(100%);
+  transition: transform 500ms ease-in;
+}
+.menu-button{
+  z-index: 1;
+  height: 26px;
+}
+#menuButton{
+  transform: rotateZ(0deg);
+  transition: transform 700ms;
+}
+.body{
+  text-align: center;
+}
+h1{
+  font-weight: 700;
+  letter-spacing: -2.5px;
+}
+.body img{
+  width: 100%;
+}
+.body div{
+  margin: 1rem;
+}
+.body button{
+  width: 135px;
+  height: 50px;
+  border-radius: 15px;
+  border-style: unset;
+  background-color: var(--almost-black);
+  color: var(--almost-white);
+  font-weight: 700;
+  font-size: 1rem;
+  transition: color 200ms, background-color 200ms;
+}
+.body button:hover{
+  color: var(--almost-black);
+  background-color: var(--almost-white);
+  border: solid 2px var(--almost-black);
+}
+.body p{
+  color: var(--almost-gray);
+  font-weight: 500;
+  letter-spacing: -1px;
+
+}
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+}
+.footer img{
+  width: 20%;
+  max-width: 150px;
+}
+
+.under-menu-div{
+  display: flex;
+  flex-direction: column;
+  color: var(--almost-gray);
+  width: 50vw;
+  height: 80vh;
+  margin-bottom: 1rem;
+  position: relative;
+  left: 45vw;
+  top: 3rem;
+}
+.menu-head{
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  cursor: pointer;
+  height: 50px;
+}
+.menu-head img{
+  height: 6px;
+  margin-left: 1rem;
+  transform: rotateZ(0deg);
+  transition: transform 500ms, filter 200ms;
+}
+.sub-menu{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+  height: 0px;
+  overflow: hidden;
+  transition: height 500ms;
+}
+#Company .sub-menu{
+  max-height: 110px;
+}
+.sub-menu div{
+  height: 40px;
+  display: flex;
+}
+.sub-menu img{
+  width: 1.2rem;
+  margin-right: 1rem;
+}
+.sub-menu a{
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+.menuSeparator{
+  display: none;
+}
+.connect-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100px;
+  justify-content: space-around;
+
+}
+.connect-div button{
+  width: 100%;
+  max-width: 250px;
+  height: 50px;
+  border-radius: 15px;
+  background-color: var(--almost-white);
+  border-style: solid;
+  border-color: var(--almost-gray);
+  color: var(--almost-gray);
+  font-size: 1rem;
+  transition: color 200ms;
+}
+.lonelyLink{
+  margin-bottom: 1.8rem;
+}
+.lonelyLink:nth-child(1){
+  margin-top: 1.8rem;
+}
+.menuButtonContainer{
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width:760px) {
+  .App{
+    width: 100vw;
+  }
+  .menu{
+    position: initial;
+    background: none;
+    height: auto;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    right: auto;
+    top: auto;
+    overflow: initial;
+    transform: translateX(0%) !important;
+  }
+  .header{
+    justify-content: flex-start;
+    height: 35px;
+    max-height: 35px;
+  }
+  .menu-head{
+    height: 27px;
+  }
+  .menu-head p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1rem;
+  }
+  .menu-button{
+    display: none;
+  }
+  .under-menu-div{
+    position: initial;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 27px;
+    margin-bottom: 0;
+  }
+  .sub-menu{
+    position: absolute;
+    margin-left: 0;
+    margin-top: 1rem;
+    background-color: var(--almost-white);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 0 85px -20px var(--almost-gray);
+  }
+  .menuButtonContainer{
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    max-width: 600px;
+  }
+  .connect-div{
+    flex-direction: row;
+    width: 200px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .connect-div button{
+    width: 150px;
+    margin-left: 1rem;
+    height: 40px;
+  }
+  .lonelyLink{
+    margin-bottom: 0;
+    font-size: 1rem;
+  }
+  #features{
+    position: relative;
+  }
+  #features .sub-menu{
+    position: absolute;
+    right: 10px;
+  }
+  .body > img{
+    max-height: 500px;
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .App{
+    overflow-y: hidden;
+  }
+  .body{
+    display: flex;
+    flex: 1;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+    height: 90%;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+  }
+  h1{
+    font-size: 4rem;
+    letter-spacing: normal;
+  }
+  .body > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 500px;
+    height: 640px;
+    text-align: start;
+  }
+  .body > div p{
+    font-size: 1.2rem;
+    max-width: 450px;
+  }
+  .body > img{
+    content: url("/images/image-hero-desktop.png");
+    max-height: 640px;
+    max-width: 500px;
+  }
+  .body button{
+    margin-top: 2rem;
+  }
+}
